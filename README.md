@@ -2,7 +2,7 @@
 <div align="center">
   <img src="PECF.png" alt="Pecf logo">
 </div>
-**PECF** (Python Easy Configuration Files) is a lightweight configuration language for Python.  
+PECF (Python Easy Configuration Files) is a lightweight configuration language for Python.  
 It combines human‑friendly syntax with the power of executable expressions – without sacrificing safety.
 
 PECF started as a small experiment 4 years ago, and then was abandoned.  
