@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="pecf.png" alt="Pecf logo">
+  <img src="PECF.png" alt="Pecf logo">
 </div>
 
 # PECF
