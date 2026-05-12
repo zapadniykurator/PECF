@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="pecf.png" alt="Pecf logo">
+</div>
+
 # PECF
 (Python easy configuration file's)
  
