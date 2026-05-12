@@ -1,39 +1,89 @@
+# PECF
 <div align="center">
   <img src="PECF.png" alt="Pecf logo">
 </div>
+**PECF** (Python Easy Configuration Files) is a lightweight configuration language for Python.  
+It combines human‑friendly syntax with the power of executable expressions – without sacrificing safety.
 
-# PECF
-(Python easy configuration file's)
- 
-PECF is my config. language for python with a syntax similar to yaml but having differences from yaml. It is only developing, so please do not judge strictly. I will be glad of any constructive criticism. PECF is very easy and understood for people. At this stage PECF has no division into int or string but it will be adding in nearest updates. I m write first version of PECF 4 years ago, and now..I'm realising MPECFGA(Make PECF great again). Now syntaxis is more hummanity, more fast and really usefully!
+PECF started as a small experiment 4 years ago, and then was abandoned.  
+Today, with **MPECFGA** (Make PECF Great Again), it has evolved into a fast, convenient, and practical tool.
 
-# Why PECF?
+---
 
-Easy code readability by both human and computer
+## Why PECF?
 
-Speed (Higher than JSON)
-
-Convenience
-
-Usefull great tools
-
-# About PECF syntaxys
-let's compare the PECF syntax with JSON:
-
-### PECF:
-> hello: world;
-
-### JSON:
-```{"hello": "world"}```
-
-I think it's obvious that the PECF code is much more readable and more convenient for humans, also PECF have some very usefull tools that will speed up your development process many times over, and PECF also supports conversion from json to pecf format!
+- ✅ **Readable** – clean syntax, no unnecessary brackets or quotes   
+- ✅ **Flexible** – automatic type handling, no need to declare types  
+- ✅ **Powerful** – `do:` lets you compute values on the fly  
+- ✅ **Convenient** – load configs from files, URLs, or raw strings with one method  
 
 
-# Docs
-(Now stability and supported version of PECF within the framework of MPECFGA)
-no wiki now, will be soon.
+## Syntax comparison
 
-(Oldest wiki docs, not for PECF: MPECFGA project)
-Docs for 1.0.25: https://github.com/Zedikon/PECF/wiki/PECF-WIKI-PAGE-(version-1.0.25)
+**PECF:**
 
-Docs for 1.0.26: https://github.com/Zedikon/PECF/wiki/PECF-WIKI-PAGE-(version-1.0.26)
+```hello: world;```
+
+
+**JSON:**
+```json
+{"hello": "world"}
+```
+
+ey features
+🔁 No type declaration required
+text
+name: PECF;
+version: 1.0;
+enabled: true;
+PECF automatically understands strings, numbers, and booleans.
+
+🧠 On‑the‑fly evaluation with do:
+text
+calculated: do: 1000 - 7;
+message: do: "Hello, " + "World!";
+Useful for dynamic configuration values, small expressions, or derived data.
+
+📁 Load from anything – with .upload()
+python
+import pecf
+
+# From a raw string
+pecf.upload("answer: do: 40 + 2;")
+
+# From a local .pecf file
+pecf.upload("config/config.pecf")
+
+# From a remote URL (HTML or raw PECF)
+pecf.upload("https://example.com/api")
+
+# Quick start
+Install PECF: **pip install pecf**
+
+```python
+import pecf
+pecf.upload("name_variable: str: you variable meaning there!;")
+print(pecf.get("name_variable"))
+
+Result: "you variable meaning there!"
+```
+# Documentation
+Current MPECFGA branch (reccomended for using)
+- <a href="">Wiki for PECF 1.0.0 </a>
+
+Older not stable versions (Not reccomend for use)
+
+- <a href="https://github.com/Zedikon/PECF/wiki/PECF-WIKI-PAGE-(version-1.0.25)">Wiki for 1.0.25</a>
+
+
+
+- <a href="https://github.com/Zedikon/PECF/wiki/PECF-WIKI-PAGE-(version-1.0.26)"> Wiki for 1.0.26</a>
+
+
+# MPECFGA
+Note: the language has evolved significantly since those versions.
+The new syntax is more human, faster, and more reliable.
+
+Status
+PECF is actively developed under MPECFGA (Make PECF Great Again).
+It is stable enough for real projects, but still welcomes constructive feedback.
